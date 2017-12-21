@@ -14,5 +14,12 @@ print "You enter the bathroom from the bedroom."
 
 print "LISTING ITEMS IN BATHROOM"
 
-print "In the bathroom, you see a shower, a sink, a medicine cabinet, 
+print "In the bathroom, you see a shower, a sink, a medicine cabinet (medicine cabinet should contain a white key for the bedroom door), and a mirror."
+
+print "WHEN REENTERING BEDROOM"
+
+print "You walk back into the bedroom from the bathroom."
+
+
+
 
