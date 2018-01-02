@@ -169,6 +169,19 @@ def room():
                 time.sleep(1)
         while room == 4: #Living Room
             livingRoomAction = input('Type, "Open the living room door" to try opening the living room door, type, "Open the bedroom door" to reenter the bedroom, or type "Search the ..." to search the item you want to interact with.')
+            print ''
+            if livingRoomAction == 'Open the living room door' or 'open the living room door':
+                timesLivingRoomDoorOpened += 1
+                if silverKey == 1:
+                    if timesLivingRoomDoorOpened <= 1:
+                        print 'You unlock the living room door and enter a dank foyer room. Inside the room is a set of paintings, a flower vase, and an eagle setpiece.'
+                        print ''
+                        time.sleep(1)
+                    room = 5
+                else:
+                    print "The door is locked."
+                    print ''
+                    time.sleep(1)
         while room == 5: #Foyer
 
 
