@@ -169,6 +169,44 @@ def room():
                 time.sleep(1)
         while room == 4: #Living Room
             livingRoomAction = input('Type, "Open the living room door" to try opening the living room door, type, "Open the bedroom door" to reenter the bedroom, or type "Search the ..." to search the item you want to interact with.')
+            print ''
+            if livingRoomAction == 'Open the living room door' or 'open the living room door':
+                timesLivingRoomDoorOpened += 1
+                if silverKey == 1:
+                    if timesLivingRoomDoorOpened <= 1:
+                        print 'You unlock the living room door and enter a dank foyer room. Inside the room is a set of paintings, a flower vase, and an eagle setpiece.'
+                        print ''
+                        time.sleep(1)
+                    room = 5
+                else:
+                    print "The door is locked."
+                    print ''
+                    time.sleep(1)
+            elif livingRoomAction == 'Search the TV cabinet' or 'search the TV cabinet':
+                print "No luck in the TV cabinet. Unfortunately, there is no cable signal, so I can't watch The Room."
+                print ''
+                time.sleep(1)
+            elif livingRoomAction == 'Search the couch' or 'search the couch':
+                silverKey = 1
+                print 'After searching the couch cushion, you find some roaches, as well as a silver key!'
+                print ''
+                time.sleep(1)
+            elif livingRoomAction == 'Search the coffee table' or 'search the coffee table':
+                print 'You find an empty Starbucks coffee cup inside the coffee table. But, there is no key...'
+                print ''
+                time.sleep(1)
+            elif livingRoomAction == 'Search the lamp' or 'search the lamp':
+                print "You don't find anything taped to the lamp."
+                print ''
+                time.sleep(1)
+            else:
+                print "That isn't an available option."
+                print ''
+                time.sleep(1)
+
+
+
+
         while room == 5: #Foyer
             print "Walking through the living room door, you see various Shawn P. McDonough portraits that line the walls so perfectly that you can't even see the walls. There's also a vase with a tree growing out of it, and a rusty, metal, life-sized statue of Shawn P. McDonough."
             print ''
