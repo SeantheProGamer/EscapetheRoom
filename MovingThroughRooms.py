@@ -170,6 +170,28 @@ def room():
         while room == 4: #Living Room
             livingRoomAction = input('Type, "Open the living room door" to try opening the living room door, type, "Open the bedroom door" to reenter the bedroom, or type "Search the ..." to search the item you want to interact with.')
         while room == 5: #Foyer
-
-
+            print "Walking through the living room door, you see various Shawn P. McDonough portraits that line the walls so perfectly that you can't even see the walls. There's also a vase with a tree growing out of it, and a rusty, metal, life-sized statue of Shawn P. McDonough."
+            print ''
+            foyerAction = input('Type, "Open the foyer door" to try opening the foyer door or type "Search the portraits, vase, or statue" to search the item you want to interact with.')
+            print ''
+            if foyerAction == 'Open the foyer door' or 'open the foyer door':
+                print ''
+                if goldKey == 1:
+                    room = 6
+                else:
+                    print "You need the key."
+            if foyerAction == 'Search the portraits' or 'search the portraits':
+                print "You search each and every portrait over the course of five hours. No dice."
+                print ''
+                time.sleep(1)
+            if foyerAction == 'Search the vase' or ' search the vase':
+                print "A fine tree, but no key."
+                print ''
+                time.sleep(1)
+            if foyerAction == 'Search the statue' or 'search the statue':
+                print "How do you search a statue?"
+                print ''
+                time.sleep(1)
+        while room == 6:
+            print "You step out into the light of the outside world. Once your eyes adjust, you see a car that you intend to use to make your escape. You freeze when you get up to it, because in the window's reflection looking back at you was the face of Shawn P. McDonough."
 room()
