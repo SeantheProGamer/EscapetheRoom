@@ -182,6 +182,31 @@ def room():
                     print "The door is locked."
                     print ''
                     time.sleep(1)
+            elif livingRoomAction == 'Search the TV cabinet' or 'search the TV cabinet':
+                print "No luck in the TV cabinet. Unfortunately, there is no cable signal, so I can't watch The Room."
+                print ''
+                time.sleep(1)
+            elif livingRoomAction == 'Search the couch' or 'search the couch':
+                silverKey = 1
+                print 'After searching the couch cushion, you find some roaches, as well as a silver key!'
+                print ''
+                time.sleep(1)
+            elif livingRoomAction == 'Search the coffee table' or 'search the coffee table':
+                print 'You find an empty Starbucks coffee cup inside the coffee table. But, there is no key...'
+                print ''
+                time.sleep(1)
+            elif livingRoomAction == 'Search the lamp' or 'search the lamp':
+                print "You don't find anything taped to the lamp."
+                print ''
+                time.sleep(1)
+            else:
+                print "That isn't an available option."
+                print ''
+                time.sleep(1)
+
+
+
+
         while room == 5: #Foyer
 
 
