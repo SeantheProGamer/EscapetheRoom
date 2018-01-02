@@ -112,7 +112,7 @@ def room():
                 print ''
                 time.sleep(1)
             elif bedroomAction == 'Search the dresser' or 'search the dresser':
-                print "Don't get too excited, as nothing is inside.""
+                print "Don't get too excited, as nothing is inside."
                 print ''
                 time.sleep(1)
             elif bedroomAction == 'Search the nightstand' or 'search the nightstand':
@@ -168,7 +168,7 @@ def room():
                 print ''
                 time.sleep(1)
         while room == 4: #Living Room
-            print "Aw dang it! A rusty living room!"
+            livingRoomAction = input('Type, "Open the living room door" to try opening the living room door, type, "Open the bedroom door" to reenter the bedroom, or type "Search the ..." to search the item you want to interact with.')
         while room == 5: #Foyer
 
 
