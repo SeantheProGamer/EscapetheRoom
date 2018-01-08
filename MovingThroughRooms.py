@@ -174,7 +174,7 @@ def room():
                 timesLivingRoomDoorOpened += 1
                 if silverKey == 1:
                     if timesLivingRoomDoorOpened <= 1:
-                        print 'You unlock the living room door and enter a dank foyer room. Inside the room is a set of paintings, a flower vase, and an eagle setpiece.'
+                        print 'You unlock the living room door and enter a dank foyer room. Inside the room is a set of paintings, a flower vase, and an eagle setpiece. You see the exit too, which is a golden door!'
                         print ''
                         time.sleep(1)
                     room = 5
@@ -203,11 +203,8 @@ def room():
                 print "That isn't an available option."
                 print ''
                 time.sleep(1)
-
-
-
-
         while room == 5: #Foyer
+<<<<<<< HEAD
             print "Walking through the living room door, you see various Shawn P. McDonough portraits that line the walls so perfectly that you can't even see the walls. There's also a vase with a tree growing out of it, and a rusty, metal, life-sized statue of Shawn P. McDonough."
             print ''
             foyerAction = input('Type, "Open the foyer door" to try opening the foyer door or type "Search the portraits, vase, or statue" to search the item you want to interact with.')
@@ -234,4 +231,10 @@ def room():
                 print "That is not an available option."
         while room == 6:
             print "You step out into the light of the outside world. Once your eyes adjust, you see a car that you intend to use to make your escape. You freeze when you get up to it, because in the window's reflection looking back at you was the face of Shawn P. McDonough."
+=======
+            foyerAction = input('Type, "Open the foyer door" to try opening the foyer door and escaping the house, type, "Open the living room door" to reenter the living room, or type "Search the ..." to search the item you want to interact with.')
+
+
+
+>>>>>>> 3944a9dcf54d1967b0190e7fbe644cd0ae8319e0
 room()
