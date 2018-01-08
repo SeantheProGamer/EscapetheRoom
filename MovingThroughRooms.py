@@ -217,19 +217,21 @@ def room():
                 if goldKey == 1:
                     room = 6
                 else:
-                    print "You need the key."
-            if foyerAction == 'Search the portraits' or 'search the portraits':
+                    print "You need to search for gold key."
+            elif foyerAction == 'Search the portraits' or 'search the portraits':
                 print "You search each and every portrait over the course of five hours. No dice."
                 print ''
                 time.sleep(1)
-            if foyerAction == 'Search the vase' or ' search the vase':
+            elif foyerAction == 'Search the vase' or ' search the vase':
                 print "A fine tree, but no key."
                 print ''
                 time.sleep(1)
-            if foyerAction == 'Search the statue' or 'search the statue':
+            elif foyerAction == 'Search the statue' or 'search the statue':
                 print "How do you search a statue?"
                 print ''
                 time.sleep(1)
+            else:
+                print "That is not an available option."
         while room == 6:
             print "You step out into the light of the outside world. Once your eyes adjust, you see a car that you intend to use to make your escape. You freeze when you get up to it, because in the window's reflection looking back at you was the face of Shawn P. McDonough."
 room()
