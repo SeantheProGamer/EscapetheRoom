@@ -174,7 +174,7 @@ def room():
                 timesLivingRoomDoorOpened += 1
                 if silverKey == 1:
                     if timesLivingRoomDoorOpened <= 1:
-                        print 'You unlock the living room door and enter a dank foyer room. Inside the room is a set of paintings, a flower vase, and an eagle setpiece.'
+                        print 'You unlock the living room door and enter a dank foyer room. Inside the room is a set of paintings, a flower vase, and an eagle setpiece. You see the exit too, which is a golden door!'
                         print ''
                         time.sleep(1)
                     room = 5
@@ -203,11 +203,9 @@ def room():
                 print "That isn't an available option."
                 print ''
                 time.sleep(1)
-
-
-
-
         while room == 5: #Foyer
+            foyerAction = input('Type, "Open the foyer door" to try opening the foyer door and escaping the house, type, "Open the living room door" to reenter the living room, or type "Search the ..." to search the item you want to interact with.')
+
 
 
 room()
