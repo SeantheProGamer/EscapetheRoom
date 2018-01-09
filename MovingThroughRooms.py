@@ -1,5 +1,6 @@
 #Escape the Room Program by Seth Williams, Sean Lessard, and Kevin Chambers
 import time
+import sys
 def room():
     room = 0
     blueKey = 0
@@ -191,6 +192,9 @@ def room():
                 if goldKey == 1:
                     room = 6
                     time.sleep(1)
+                    print "You step out into the light of the outside world. Once your eyes adjust, you see a car that you intend to use to make your escape. You freeze when you get up to it, because in the window's reflection looking back at you was the face of Shawn P. McDonough."
+                    time.sleep(5)
+                    sys.exit
                     
                 else:
                     print "You need to search for gold key."
@@ -206,7 +210,4 @@ def room():
             else:
                 print "That is not an available option."
             time.sleep(1)
-        while room == 6:
-            print "You step out into the light of the outside world. Once your eyes adjust, you see a car that you intend to use to make your escape. You freeze when you get up to it, because in the window's reflection looking back at you was the face of Shawn P. McDonough."
-            room = 7
 room()
