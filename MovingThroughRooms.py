@@ -7,16 +7,19 @@ def room():
     whiteKey = 0
     silverKey = 0
     goldKey = 0
+    timesIntroPlayed = 0
     timesBasementDoorOpened = 0
     timesStairwellDoorOpened = 0
     timesBedroomDoorOpened = 0
     timesBathroomDoorOpened = 0
     timesLivingRoomDoorOpened = 0
     while room <= 6:
-        print 'You wake up in a dark and dreary basement. You are worried that you are trapped. You must find a way out! There is a blue door, a grandfather clock, a set of drawers, and a lamp.'
-        print ''
         time.sleep(1)
         while room == 0: #Basement (Sean)
+            if timesIntroPlayed == 0:
+                print 'You wake up in a dark and dreary basement. You are worried that you are trapped. You must find a way out! There is a blue door, a grandfather clock, a set of drawers, and a lamp.'
+                print ''
+                timesIntroPlayed = 1
             basementAction = raw_input('Type, "Open the basement door" to try opening the door or type, "Search the ..." to search the item you want to interact with.')
             print ''
             if basementAction == 'Open the basement door' or basementAction == 'open the basement door':
@@ -188,6 +191,7 @@ def room():
                 if goldKey == 1:
                     room = 6
                     time.sleep(1)
+                    
                 else:
                     print "You need to search for gold key."
             elif foyerAction == 'Search the portraits' or foyerAction == 'search the portraits':
@@ -204,4 +208,5 @@ def room():
             time.sleep(1)
         while room == 6:
             print "You step out into the light of the outside world. Once your eyes adjust, you see a car that you intend to use to make your escape. You freeze when you get up to it, because in the window's reflection looking back at you was the face of Shawn P. McDonough."
+            room = 7
 room()
