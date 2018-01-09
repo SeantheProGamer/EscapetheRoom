@@ -194,8 +194,7 @@ def room():
                     time.sleep(1)
                     print "You step out into the light of the outside world. Once your eyes adjust, you see a car that you intend to use to make your escape. You freeze when you get up to it, because in the window's reflection looking back at you was the face of Shawn P. McDonough."
                     time.sleep(5)
-                    sys.exit
-                    
+                    sys.exit   
                 else:
                     print "You need to search for gold key."
             elif foyerAction == 'Search the portraits' or foyerAction == 'search the portraits':
